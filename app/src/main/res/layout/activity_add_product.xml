@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.Admin.AddProductActivity">
+
+    <ImageView
+        android:id="@+id/new_product_avatar"
+        android:layout_width="215dp"
+        android:layout_height="240dp"
+        android:background="@drawable/user_image_background"
+        android:scaleType="fitXY"
+        android:src="@drawable/product_placeholder"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/product_avatar" />
+
+    <TextView
+        android:id="@+id/new_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/progress_bar_size"
+        android:text="@string/product_name"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorNormalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_product_avatar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_new_product_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/product_width"
+        android:layout_height="@dimen/progress_bar_size"
+        android:hint="@string/product_name"
+        android:textColorHint="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/new_product_name"
+        app:layout_constraintBottom_toBottomOf="@id/new_product_name">
+
+        <com.example.thesis_trading_app.utils.MTAEditText
+            android:id="@+id/et_new_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/et_product_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/new_product_category"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/progress_bar_size"
+        android:text="@string/product_category"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorNormalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_product_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_new_product_category"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/product_width"
+        android:layout_height="@dimen/progress_bar_size"
+        android:hint="@string/product_category"
+        android:textColorHint="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/new_product_category"
+        app:layout_constraintBottom_toBottomOf="@id/new_product_category">
+
+        <com.example.thesis_trading_app.utils.MTAEditText
+            android:id="@+id/et_new_product_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/et_product_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/new_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/progress_bar_size"
+        android:text="@string/product_price"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorNormalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_product_category" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_new_product_price"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/product_width"
+        android:layout_height="@dimen/progress_bar_size"
+        android:hint="@string/product_price"
+        android:textColorHint="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/new_product_price"
+        app:layout_constraintBottom_toBottomOf="@id/new_product_price">
+
+        <com.example.thesis_trading_app.utils.MTAEditText
+            android:id="@+id/et_new_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/et_product_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/new_product_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/progress_bar_size"
+        android:text="@string/product_amount"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorNormalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_product_price" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_new_product_amount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/product_width"
+        android:layout_height="@dimen/progress_bar_size"
+        android:hint="@string/product_amount"
+        android:textColorHint="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/new_product_amount"
+        app:layout_constraintBottom_toBottomOf="@id/new_product_amount">
+
+        <com.example.thesis_trading_app.utils.MTAEditText
+            android:id="@+id/et_new_product_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="@dimen/et_product_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/new_product_barCode"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/progress_bar_size"
+        android:text="@string/barcode"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorNormalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_product_amount" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_new_product_barCode"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/product_width"
+        android:layout_height="@dimen/progress_bar_size"
+        android:hint="@string/barcode"
+        android:textColorHint="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/new_product_barCode"
+        app:layout_constraintBottom_toBottomOf="@id/new_product_barCode">
+
+        <com.example.thesis_trading_app.utils.MTAEditText
+            android:id="@+id/et_new_product_barCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="@dimen/et_product_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.example.thesis_trading_app.utils.MTAButton
+        android:id="@+id/btn_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingTop="@dimen/btn_padding"
+        android:paddingBottom="@dimen/btn_padding"
+        android:text="@string/add_product"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_product_barCode"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

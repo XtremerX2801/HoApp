@@ -1,0 +1,130 @@
+<resources>
+
+    <string name="app_name">Ho_Trading_App</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="content_description">image</string>
+    <string name="title_login">LOGIN</string>
+    <string name="et_hint_email_id">Email</string>
+    <string name="et_hint_password">Password</string>
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="btn_lbl_login">login</string>
+    <string name="not_have_account">Don\'t have an account?</string>
+    <string name="register"><u>Register</u></string>
+    <string name="create_an_account">CREATE AN ACCOUNT</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_first_name">First name</string>
+    <string name="et_hint_confirm_password">Confirm Password</string>
+    <string name="i_agree_to_the_terms_and_condition">I Agree To The Terms and Condition</string>
+    <string name="btn_lbl_register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login"><u>Login</u></string>
+    <string name="err_msg_enter_first_name">Enter your first name</string>
+    <string name="err_msg_enter_last_name">Enter your last name</string>
+    <string name="err_msg_enter_email">Enter email</string>
+    <string name="err_msg_enter_password">Enter password</string>
+    <string name="err_msg_enter_confirm_password">Enter password again</string>
+    <string name="err_msg_password_and_confirm_password_mismatch">Password and Confirm password Mismatch</string>
+    <string name="err_msg_agree_terms_and_condition">Please agree terms and condition</string>
+    <string name="register_successful">Register Successfully!</string>
+    <string name="please_wait">Please Wait&#8230;</string>
+    <string name="title_forgot_password">FORGOT PASSWORD?</string>
+    <string name="forgot_password_title_description">Enter your username and E-mail address and we\'ll send you an email to reset your password</string>
+    <string name="btn_lbl_summit">Summit</string>
+    <string name="email_sent_success">Email sent successfully to reset your password</string>
+    <string name="title_complete_profile">COMPLETE PROFILE</string>
+    <string name="title_edit_profile">EDIT PROFILE</string>
+    <string name="et_hint_mobile_number">Mobile Number</string>
+    <string name="rb_lbl_male">MALE</string>
+    <string name="rb_lbl_female">FEMALE</string>
+    <string name="btn_lbl_save">Save</string>
+    <string name="read_storage_permission_denied">Permission denied! You can allow it from the setting</string>
+    <string name="image_selection_failed">Image Selection Failed!</string>
+    <string name="err_msg_enter_mobile_number">Error Mobile Number!</string>
+    <string name="msg_profile_update_success">Your Profile is updated successfully.</string>
+    <string name="title_settings">Settings</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_addresses">Addresses</string>
+    <string name="btn_lbl_logout">Logout</string>
+    <string name="product_info">Product Information</string>
+    <string name="err_msg_enter_product_name">Enter the product name</string>
+    <string name="err_msg_enter_product_category">Enter the product category</string>
+    <string name="err_msg_enter_product_price">Enter the product price</string>
+    <string name="err_msg_enter_product_amount">Enter the product amount</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="justshop">JustShop</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <!-- <string name="title_activity_dashboard">MainActivity</string> -->
+    <string name="title_home">Home</string>
+    <string name="title_products">Products</string>
+    <string name="title_orders">Orders</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="please_click_twice_in_2s_to_exit">Please click twice in 2s to exit.</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="product">Product</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_category">Product Category</string>
+    <string name="product_price">Price</string>
+    <string name="product_amount">Quantity</string>
+    <string name="product_purchase">PURCHASE</string>
+    <string name="buy">Buy</string>
+    <string name="buy_complete">Buy Complete</string>
+    <string name="image">Image</string>
+    <string name="view">VIEW</string>
+    <string name="add_new_product">Add New Product</string>
+    <string name="admin_screen">ADMIN SCREEN</string>
+    <string name="add_product">ADD PRODUCT</string>
+    <string name="qr_scanner">QR Scanner</string>
+    <string name="modify_product">Modify Product</string>
+    <string name="amount">Amount</string>
+    <string name="list_all_products">List all products</string>
+    <string name="qr_image">qr_image</string>
+    <string name="barcode">Barcode</string>
+    <string name="list_products">List Products</string>
+    <string name="product_avatar">Product Avatar</string>
+    <string name="imageview">ImageView</string>
+    <string name="search_data">Search Data</string>
+    <string name="search_product">Search Product</string>
+    <string name="enter_product_name">Enter product name</string>
+    <string name="delete">Delete</string>
+
+    <string name="payment_through_momo">Thanh toán bằng MoMo</string>
+    <string name="mapping_through_momo">Bắt đầu liên kết</string>
+    <string name="link_momo">Liên kết MoMo</string>
+    <string name="payment_momo">Thanh toán qua MoMo</string>
+    <string name="not_receive_info">Không nhận được thông tin</string>
+    <string name="not_receive_info_err">Không gởi được yêu cầu vui lòng kiểm tra lại</string>
+    <string name="development_environment">Development Environment</string>
+    <string name="merchant_code_your_merchant_code">Merchant Code: #your_merchant_code</string>
+    <string name="merchant_name_your_merchant_name">Merchant Name: #your_merchant_name</string>
+    <string name="input_amount_default_10_000">Input amount default 10.000đ</string>
+    <string name="show_message">show message</string>
+    <string name="add_products">Add Products</string>
+    <string name="sales_dashboard">Sales Dashboard</string>
+    <string name="dashboard_screen">Dashboard Screen</string>
+    <string name="product_type_1">Product Type 1</string>
+    <string name="product_type_2">Product Type 2</string>
+    <string name="payment_through_raw_money">Thanh toán bằng tiền mặt</string>
+    <string name="return_home">Về trang chính</string>
+    <string name="get_user_cart">Get user cart</string>
+
+</resources>

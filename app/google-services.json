@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "95338023357",
+    "project_id": "mythesisfirebase-a81e3",
+    "storage_bucket": "mythesisfirebase-a81e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95338023357:android:8c431dc1a3f3736d90ead4",
+        "android_client_info": {
+          "package_name": "com.example.thesis_trading_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95338023357-aq67h4v6poqob2ci1nj76t0e1t3j41c4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thesis_trading_app",
+            "certificate_hash": "00c5aa0c5857f5379fb5126a587ee7f09ffa8d08"
+          }
+        },
+        {
+          "client_id": "95338023357-nmcv79muibruk72fbhmvlsonp3qihbia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMhu4v2-NIhbE2cgPVWVHNc06pGfbTGNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95338023357-nmcv79muibruk72fbhmvlsonp3qihbia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

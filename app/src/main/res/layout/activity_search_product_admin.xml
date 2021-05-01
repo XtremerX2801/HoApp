@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Admin.SearchProductAdminActivity">
+
+    <TextView
+        android:id="@+id/search_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/progress_bar_size"
+        android:text="@string/product_name"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorNormalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_search_product_amount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/product_width"
+        android:layout_height="@dimen/progress_bar_size"
+        android:hint="@string/product_name"
+        android:textColorHint="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_product_name"
+        app:layout_constraintBottom_toBottomOf="@id/search_product_name">
+
+        <com.example.thesis_trading_app.utils.MTAEditText
+            android:id="@+id/et_search_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/et_product_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/search_product_barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/progress_bar_size"
+        android:text="@string/barcode"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorNormalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_product_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_search_product_barCode"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/product_width"
+        android:layout_height="@dimen/progress_bar_size"
+        android:hint="@string/barcode"
+        android:textColorHint="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_product_barcode"
+        app:layout_constraintBottom_toBottomOf="@id/search_product_barcode">
+
+        <com.example.thesis_trading_app.utils.MTAEditText
+            android:id="@+id/et_search_product_barCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="@dimen/et_product_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.example.thesis_trading_app.utils.MTAButton
+        android:id="@+id/btn_search_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingTop="@dimen/btn_padding"
+        android:paddingBottom="@dimen/btn_padding"
+        android:text="@string/search_product"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_product_barcode"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

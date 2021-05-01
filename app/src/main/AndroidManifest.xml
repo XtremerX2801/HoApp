@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thesis_trading_app">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.activities.Admin.RawPaymentActivity"></activity>
+        <activity android:name=".ui.activities.Admin.GetUserCartActivity" />
+        <activity android:name=".ui.activities.Admin.PayRawActivity" />
+        <activity android:name=".ui.activities.Admin.ProductType2Activity" />
+        <activity android:name=".ui.activities.Admin.ProductType1Activity" />
+        <activity android:name=".ui.activities.Admin.SalesDashboardActivity" />
+        <activity android:name=".ui.activities.User.PaymentActivity" />
+        <activity
+            android:name=".ui.activities.Admin.SearchProductAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.Admin.AddBarcodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.Admin.QRGeneratorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.User.UserQRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.Admin.ModifyProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.Admin.ListProductsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activities.Admin.QRActivity" />
+        <activity
+            android:name=".ui.activities.Admin.AddProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.Admin.AdminActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.TestOnly.PurchaseCompleteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.TestOnly.PurchaseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.User.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.User.DashboardActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ui.activities.User.UserProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.Authentication.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activities.Authentication.BaseActivity" />
+        <activity
+            android:name=".ui.activities.Authentication.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.Authentication.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.Authentication.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.TestOnly.MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
