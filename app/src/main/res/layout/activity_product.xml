@@ -156,7 +156,7 @@
                 app:layout_constraintTop_toBottomOf="@id/txt_product_price">
             </TextView>
 
-            <com.example.thesis_trading_app.utils.MTAButton
+            <com.trading.thesis_trading_app.utils.MTAButton
                 android:id="@+id/btn_purchase"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

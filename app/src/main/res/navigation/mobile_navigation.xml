@@ -6,20 +6,20 @@
     app:startDestination="@+id/navigation_products">
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.thesis_trading_app.ui.User.fragments.ReceiptFragment"
-        android:label="@string/title_dashboard"
+        android:id="@+id/navigation_receipt"
+        android:name="com.trading.thesis_trading_app.ui.User.fragments.ReceiptFragment"
+        android:label="Receipt"
         tools:layout="@layout/fragment_receipt" />
 
     <fragment
         android:id="@+id/navigation_products"
-        android:name="com.example.thesis_trading_app.ui.User.fragments.ProductFragment"
+        android:name="com.trading.thesis_trading_app.ui.User.fragments.ProductFragment"
         android:label="@string/title_products"
         tools:layout="@layout/fragment_product" />
 
     <fragment
         android:id="@+id/navigation_orders"
-        android:name="com.example.thesis_trading_app.ui.User.fragments.OrdersFragment"
+        android:name="com.trading.thesis_trading_app.ui.User.fragments.OrdersFragment"
         android:label="@string/title_orders"
         tools:layout="@layout/fragment_orders" />
 </navigation>

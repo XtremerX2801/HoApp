@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <TextView
+        android:id="@+id/location_header_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="Các cửa hàng có sản phẩm"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/location_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/location_header_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/store1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:textColor="@color/colorNormalText"
+            android:textSize="20sp"
+            android:text="Cửa hàng 1"/>
+
+        <RadioButton
+            android:id="@+id/store2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:textColor="@color/colorNormalText"
+            android:textSize="20sp"
+            android:text="Cửa hàng 2"/>
+
+        <RadioButton
+            android:id="@+id/store3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorNormalText"
+            android:textSize="20sp"
+            android:text="Cửa hàng 3"/>
+
+        <RadioButton
+            android:id="@+id/store4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:textColor="@color/colorNormalText"
+            android:textSize="20sp"
+            android:text="Cửa hàng 4"/>
+
+        <RadioButton
+            android:id="@+id/store5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:textColor="@color/colorNormalText"
+            android:textSize="20sp"
+            android:text="Cửa hàng 5"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/view_location"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Tìm vị trí"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorThemeLightBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_radio_group"/>
+
+    <Button
+        android:id="@+id/choose_store"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Chọn cửa hàng"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_location"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

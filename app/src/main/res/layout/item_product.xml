@@ -4,47 +4,78 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp">
+    android:layout_marginTop="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000">
+    </TextView>
 
     <LinearLayout
-        android:id="@+id/product_section_1"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/product_image"
-            android:layout_width="0dp"
-            android:layout_height="200dp"
-            android:text="@string/image"
-            android:textAlignment="textStart"
-            android:layout_weight="1" />
+        android:id="@+id/product_user_section_1"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginTop="2dp">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="163dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/product_user_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/user_image_background"
+                android:contentDescription="@string/product_avatar"
+                android:scaleType="fitXY"
+                android:src="@drawable/product_placeholder" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="163dp"
             android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="3">
 
             <TextView
-                android:id="@+id/product_name"
+                android:id="@+id/product_user_name"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:text="@string/product_name"
                 android:paddingStart="10dp"
                 android:paddingEnd="5dp"
                 android:textColor="@color/colorNormalText"
-                android:layout_weight="1" />
+                android:textSize="15sp"
+                android:layout_weight="2" />
 
             <TextView
-                android:id="@+id/product_category"
+                android:id="@+id/product_user_category"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:text="@string/product_category"
                 android:paddingStart="10dp"
                 android:paddingEnd="5dp"
                 android:textColor="@color/colorNormalText"
+                android:textSize="15sp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/product_user_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/product_price"
+                android:paddingStart="10dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/colorNormalText"
+                android:textSize="15sp"
                 android:layout_weight="1" />
 
         </LinearLayout>
@@ -52,30 +83,34 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/product_section_2"
+        android:id="@+id/product_user_section_3"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp">
 
         <TextView
-            android:id="@+id/product_barcode"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/design_default_color_primary_dark">
+        </TextView>
+
+        <Button
+            android:id="@+id/view_user_product"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:text="@string/barcode"
-            android:textSize="12sp"
+            android:background="@color/colorThemeLightBlue"
+            android:text="Xem thông tin sản phẩm"
+            android:textSize="20sp"
             android:layout_weight="1"/>
 
         <TextView
-            android:id="@+id/product_price"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/product_price"
-            android:paddingStart="10dp"
-            android:paddingEnd="5dp"
-            android:textColor="@color/colorNormalText"
-            android:layout_weight="1" />
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/design_default_color_primary_dark">
+        </TextView>
 
     </LinearLayout>
 

@@ -21,7 +21,7 @@
     <dimen name="txt_terms_and_condition_textSize">14sp</dimen>
     <dimen name="button_paddingTop_Bottom">8dp</dimen>
     <dimen name="progress_dialog_content_padding">10dp</dimen>
-    <dimen name="progress_bar_size">50sp</dimen>
+    <dimen name="progress_bar_size">40sp</dimen>
     <dimen name="progress_text_marginStart">16dp</dimen>
     <dimen name="progress_text_size">16sp</dimen>
     <dimen name="forgot_password_title_textSize">18sp</dimen>
@@ -30,7 +30,7 @@
     <dimen name="user_image_background_corner_radius">10dp</dimen>
     <dimen name="profile_user_image_size">160dp</dimen>
     <dimen name="product_image_size">150dp</dimen>
-    <dimen name="profile_user_image_marginTop">80dp</dimen>
+    <dimen name="profile_user_image_marginTop">40dp</dimen>
     <dimen name="product_image_marginTop">40dp</dimen>
     <dimen name="profile_user_photo_margin">3dp</dimen>
     <dimen name="profile_radio_button_height">40dp</dimen>
@@ -51,7 +51,7 @@
     <dimen name="settings_edit_label_textSize">14sp</dimen>
     <dimen name="settings_name_marginTop">30dp</dimen>
     <dimen name="settings_name_textSize">22sp</dimen>
-    <dimen name="settings_info_marginTop">3dp</dimen>
+    <dimen name="settings_info_marginTop">10dp</dimen>
     <dimen name="settings_info_textSize">18sp</dimen>
     <dimen name="settings_address_margin">16dp</dimen>
     <dimen name="settings_address_padding">16dp</dimen>

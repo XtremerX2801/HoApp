@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="0dp">
+
+        <ImageView
+            android:id="@+id/comment_avatar"
+            android:src="@drawable/user_placeholder_24"
+            android:layout_width="50dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/comment_firstname"
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:text="Username"
+            android:textSize="8sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNormalText"/>
+
+        <TextView
+            android:id="@+id/comment_lastname"
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:text="Username"
+            android:textAlignment="center"
+            android:textSize="8sp"
+            android:textColor="@color/colorNormalText"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/receipt_date"
+        android:textSize="12sp"
+        android:paddingTop="4dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:textColor="@color/colorNormalText" />
+
+</LinearLayout>

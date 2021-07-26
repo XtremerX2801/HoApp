@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:typeface="serif"
-                android:text="@string/development_environment"
+                android:text="Danh sách sản phẩm"
                 android:textColor="#cd1076"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
@@ -81,8 +81,18 @@
                 android:id="@+id/btnPayRaw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/payment_through_raw_money"
+                android:layout_marginTop="10dp"
+                android:text="@string/payment_preorder_shop"
                 android:background="@color/ic_launcher_background"/>
+
+            <Button
+                android:id="@+id/btnPayOnline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/online_shopping"
+                android:background="@color/colorAccent"/>
+
         </LinearLayout>
     </ScrollView>
 

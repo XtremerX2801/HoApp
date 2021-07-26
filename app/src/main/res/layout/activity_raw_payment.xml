@@ -6,4 +6,92 @@
     android:layout_height="match_parent"
     tools:context=".ui.Admin.RawPaymentActivity">
 
+    <TextView
+        android:id="@+id/title_raw_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giỏ hàng của người dùng"
+        android:textColor="@color/colorSnackBarError"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/cart_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total  Price: "
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/title_raw_payment"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/cart_total_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Products: "
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/cart_total_price"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/user_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coupon: "
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/cart_total_product"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/cart_swift_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/user_coupon"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_ordered_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:verticalScrollbarPosition="right"
+            android:paddingBottom="60dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/btn_cart_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thanh toán không trừ coupon"
+        android:background="@color/ic_launcher_background"
+        app:layout_constraintTop_toBottomOf="@+id/cart_swift_refresh"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_cart_coupon_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Thanh toán có trừ coupon"
+        android:background="@color/colorSnackBarSuccess"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cart_pay"
+        app:layout_constraintStart_toStartOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

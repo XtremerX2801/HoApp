@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Admin.OnlineProductsActivity">
+
+    <TextView
+        android:id="@+id/online_products_customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Khách hàng: "
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/online_products_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Đơn hàng ngày: "
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/online_products_customer_name"/>
+
+    <TextView
+        android:id="@+id/online_products_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Tổng tiền: "
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/online_products_date"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiftRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/online_products_total_price">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/online_products_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:verticalScrollbarPosition="right"
+            android:paddingBottom="60dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/online_product_purchase"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Thanh toán"
+        android:background="@color/colorThemeLightBlue"
+        app:layout_constraintTop_toBottomOf="@id/swiftRefresh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

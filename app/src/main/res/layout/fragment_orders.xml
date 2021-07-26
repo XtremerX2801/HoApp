@@ -6,32 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".ui.User.fragments.OrdersFragment">
 
+    <ImageView
+        android:id="@+id/the_qr"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <TextView
         android:id="@+id/pro_num"
-        android:layout_width="270dp"
-        android:layout_height="40dp"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
         android:text="Tổng số lượng sản phẩm: "
         android:textSize="18sp"
         android:background="@color/ic_launcher_background"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toEndOf="@+id/the_qr"/>
 
     <TextView
         android:id="@+id/pro_price"
-        android:layout_width="270dp"
-        android:layout_height="40dp"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
         android:text="Tổng giá tiền: "
         android:textSize="18sp"
         android:background="@color/ic_launcher_background"
         app:layout_constraintTop_toBottomOf="@id/pro_num"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toEndOf="@+id/the_qr"/>
 
     <Button
         android:id="@+id/btn_cashout"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:text="Thanh toán"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:background="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/pro_num"

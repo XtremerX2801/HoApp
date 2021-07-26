@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/user_rank"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="@string/user_rank"
+        android:textSize="12sp"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/btn_selected"
+        android:layout_weight="0.8"/>
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1.1"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="@string/user_name"
+        android:textSize="12sp"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/colorNormalText"
+        android:layout_weight="4"/>
+
+    <TextView
+        android:id="@+id/user_point"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/user_point"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_weight="1.5"/>
+
+</LinearLayout>

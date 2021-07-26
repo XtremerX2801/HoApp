@@ -43,7 +43,7 @@
         app:layout_constraintTop_toTopOf="@id/new_product_name"
         app:layout_constraintBottom_toBottomOf="@id/new_product_name">
 
-        <com.example.thesis_trading_app.utils.MTAEditText
+        <com.trading.thesis_trading_app.utils.MTAEditText
             android:id="@+id/et_new_product_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toTopOf="@id/new_product_category"
         app:layout_constraintBottom_toBottomOf="@id/new_product_category">
 
-        <com.example.thesis_trading_app.utils.MTAEditText
+        <com.trading.thesis_trading_app.utils.MTAEditText
             android:id="@+id/et_new_product_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
         app:layout_constraintTop_toTopOf="@id/new_product_price"
         app:layout_constraintBottom_toBottomOf="@id/new_product_price">
 
-        <com.example.thesis_trading_app.utils.MTAEditText
+        <com.trading.thesis_trading_app.utils.MTAEditText
             android:id="@+id/et_new_product_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
         app:layout_constraintTop_toTopOf="@id/new_product_amount"
         app:layout_constraintBottom_toBottomOf="@id/new_product_amount">
 
-        <com.example.thesis_trading_app.utils.MTAEditText
+        <com.trading.thesis_trading_app.utils.MTAEditText
             android:id="@+id/et_new_product_amount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -171,7 +171,7 @@
         app:layout_constraintTop_toTopOf="@id/new_product_barCode"
         app:layout_constraintBottom_toBottomOf="@id/new_product_barCode">
 
-        <com.example.thesis_trading_app.utils.MTAEditText
+        <com.trading.thesis_trading_app.utils.MTAEditText
             android:id="@+id/et_new_product_barCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -181,13 +181,77 @@
             android:textSize="@dimen/et_textSize"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.example.thesis_trading_app.utils.MTAButton
+    <TextView
+        android:id="@+id/new_product_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/progress_bar_size"
+        android:text="Brand"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorNormalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_product_barCode" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_new_product_brand"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/product_width"
+        android:layout_height="@dimen/progress_bar_size"
+        android:hint="@string/brand"
+        android:textColorHint="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/new_product_brand"
+        app:layout_constraintBottom_toBottomOf="@id/new_product_brand">
+
+        <com.trading.thesis_trading_app.utils.MTAEditText
+            android:id="@+id/et_new_product_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/et_product_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/new_product_made_in"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/progress_bar_size"
+        android:text="@string/made_in"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorNormalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_product_brand" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_new_product_made_in"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/product_width"
+        android:layout_height="@dimen/progress_bar_size"
+        android:hint="Made in"
+        android:textColorHint="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/new_product_made_in"
+        app:layout_constraintBottom_toBottomOf="@id/new_product_made_in">
+
+        <com.trading.thesis_trading_app.utils.MTAEditText
+            android:id="@+id/et_new_product_made_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/et_product_padding"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/et_textSize"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.trading.thesis_trading_app.utils.MTAButton
         android:id="@+id/btn_add_product"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/button_background"
         android:foreground="?attr/selectableItemBackground"
@@ -198,6 +262,6 @@
         android:textSize="@dimen/btn_textSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/new_product_barCode"/>
+        app:layout_constraintTop_toBottomOf="@id/new_product_made_in"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

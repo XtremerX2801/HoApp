@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/receipt_line"
+        android:layout_width="match_parent"
+        android:background="@color/colorNormalText"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0.02"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.98"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_receipt"
+            android:layout_marginStart="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_receipt"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:id="@+id/receipt_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/receipt_date"
+            android:textSize="12sp"
+            android:paddingTop="7dp"
+            android:textColor="@color/colorNormalText"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:layout_weight="0.9"/>
+    </LinearLayout>
+
+</LinearLayout>

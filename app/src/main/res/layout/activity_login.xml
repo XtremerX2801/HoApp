@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/content_description"
             android:scaleType="fitXY"
-            android:src="@drawable/auth_screens_background"/>
+            android:src="@drawable/the_logo"/>
 
 <!--        <ImageView-->
 <!--            android:layout_width="@dimen/auth_logo_width_size"-->
@@ -33,7 +33,7 @@
 
     </FrameLayout>
 
-    <com.example.thesis_trading_app.utils.MTATextViewBold
+    <com.trading.thesis_trading_app.utils.MTATextViewBold
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title">
 
-        <com.example.thesis_trading_app.utils.MTAEditText
+        <com.trading.thesis_trading_app.utils.MTAEditText
             android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_email">
 
-        <com.example.thesis_trading_app.utils.MTAEditText
+        <com.trading.thesis_trading_app.utils.MTAEditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
             android:textSize="@dimen/et_textSize"
             tools:text="123456" />
 
-        <com.example.thesis_trading_app.utils.MTATextViewBold
+        <com.trading.thesis_trading_app.utils.MTATextViewBold
             android:id="@+id/tv_forgot_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/til_password"/>
 
-        <com.example.thesis_trading_app.utils.MTAButton
+        <com.trading.thesis_trading_app.utils.MTAButton
             android:id="@+id/btb_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btb_login">
 
-            <com.example.thesis_trading_app.utils.MTATextViewBold
+            <com.trading.thesis_trading_app.utils.MTATextViewBold
                 android:id="@+id/tv_not_have_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -147,7 +147,7 @@
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/lbl_text_view_textSize" />
 
-            <com.example.thesis_trading_app.utils.MTATextViewBold
+            <com.trading.thesis_trading_app.utils.MTATextViewBold
                 android:id="@+id/tv_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

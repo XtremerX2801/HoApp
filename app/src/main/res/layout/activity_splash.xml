@@ -1,23 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/app_splash_tempo"
+    android:background="@drawable/splash_screen"
     tools:context=".ui.Authentication.SplashActivity">
 
-    <com.example.thesis_trading_app.utils.MTATextViewBold
+    <com.trading.thesis_trading_app.utils.MTATextViewBold
         android:id="@+id/tv_app_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/justshop"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:textColor="@color/colorWhite"
-        android:textSize="@dimen/splash_title_text_size"
-        android:layout_marginTop="@dimen/title_marginTop"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_marginTop="90dp"
+        android:text="Kính chào quý khách"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-    </com.example.thesis_trading_app.utils.MTATextViewBold>
+    </com.trading.thesis_trading_app.utils.MTATextViewBold>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

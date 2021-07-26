@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.User.RankingActivity">
+    
+    <TextView
+        android:id="@+id/ranking_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="XẾP HẠNG KHÁCH HÀNG"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:textColor="@color/btn_selected"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    
+    <TextView
+        android:id="@+id/ranking_number"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:text="Xếp hạng"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ranking_title"
+        app:layout_constraintDimensionRatio="0.9"/>
+
+    <TextView
+        android:id="@+id/ranking_username"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:text="Người dùng"
+        android:textColor="@color/colorPrimaryText"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/ranking_number"
+        app:layout_constraintTop_toBottomOf="@id/ranking_title"
+        app:layout_constraintEnd_toStartOf="@id/ranking_total_point" />
+
+    <TextView
+        android:id="@+id/ranking_total_point"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:text="Điểm"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toEndOf="@id/ranking_title"
+        app:layout_constraintTop_toBottomOf="@id/ranking_title"
+        app:layout_constraintDimensionRatio="1.9"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/rankingSwiftRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="@id/ranking_title"
+        app:layout_constraintTop_toBottomOf="@id/ranking_number">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ranking_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:verticalScrollbarPosition="right"
+            android:paddingBottom="60dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="@id/search_product_name"
         app:layout_constraintBottom_toBottomOf="@id/search_product_name">
 
-        <com.example.thesis_trading_app.utils.MTAEditText
+        <com.trading.thesis_trading_app.utils.MTAEditText
             android:id="@+id/et_search_product_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toTopOf="@id/search_product_barcode"
         app:layout_constraintBottom_toBottomOf="@id/search_product_barcode">
 
-        <com.example.thesis_trading_app.utils.MTAEditText
+        <com.trading.thesis_trading_app.utils.MTAEditText
             android:id="@+id/et_search_product_barCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             android:textSize="@dimen/et_textSize"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.example.thesis_trading_app.utils.MTAButton
+    <com.trading.thesis_trading_app.utils.MTAButton
         android:id="@+id/btn_search_product"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

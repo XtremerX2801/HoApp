@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=00:C5:AA:0C:58:57:F5:37:9F:B5:12:6A:58:7E:E7:F0:9F:FA:8D:08%3Bcom.trading.thesis_trading_app.utils
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.trading.thesis_trading_app.utils
+
+    SHA-1 certificate fingerprint:
+    00:C5:AA:0C:58:57:F5:37:9F:B5:12:6A:58:7E:E7:F0:9F:FA:8D:08
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDMhu4v2-NIhbE2cgPVWVHNc06pGfbTGNo</string>
+</resources>
