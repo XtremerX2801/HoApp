@@ -1,5 +1,6 @@
 package com.trading.thesis_trading_app.ui.User
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -81,8 +82,33 @@ class ReceiptActivity : AppCompatActivity() {
                     productViewHolder.productPrice.text = "Giá: " + price.toString() + "đ"
                     productViewHolder.productTotalPrice.text = "Tổng: " + (price * product_amount[position].toInt()).toString() + "đ"
                     productViewHolder.productAmount.text = "Số lượng: " + product_amount[position]
-
                     GlideLoader(this@ReceiptActivity).loadProductPicture(image, productViewHolder.productImage)
+
+                    productViewHolder.productImage.setOnClickListener{
+                        val intent = Intent(this@ReceiptActivity, ProductInfoActivity::class.java)
+                        intent.putExtra(Constants.PRODUCT_BARCODE, product_list[position].toLong())
+                        startActivity(intent)
+                    }
+                    productViewHolder.productName.setOnClickListener{
+                        val intent = Intent(this@ReceiptActivity, ProductInfoActivity::class.java)
+                        intent.putExtra(Constants.PRODUCT_BARCODE, product_list[position].toLong())
+                        startActivity(intent)
+                    }
+                    productViewHolder.productPrice.setOnClickListener{
+                        val intent = Intent(this@ReceiptActivity, ProductInfoActivity::class.java)
+                        intent.putExtra(Constants.PRODUCT_BARCODE, product_list[position].toLong())
+                        startActivity(intent)
+                    }
+                    productViewHolder.productTotalPrice.setOnClickListener{
+                        val intent = Intent(this@ReceiptActivity, ProductInfoActivity::class.java)
+                        intent.putExtra(Constants.PRODUCT_BARCODE, product_list[position].toLong())
+                        startActivity(intent)
+                    }
+                    productViewHolder.productAmount.setOnClickListener{
+                        val intent = Intent(this@ReceiptActivity, ProductInfoActivity::class.java)
+                        intent.putExtra(Constants.PRODUCT_BARCODE, product_list[position].toLong())
+                        startActivity(intent)
+                    }
                 }
             }
         }
